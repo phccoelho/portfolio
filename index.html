@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto Portfólio do Pedro, desenvolvedor Web FullStack">
+    <meta name="author" content="Pedro Coelho">
+    <meta name="keywords" content="portfólio, desenvolvedor, web, fullstack, Pedro Coelho, HTML, CSS, JavaScript" >
+    <link rel="icon" href="./assets/img/favicon.svg">
+    <title>Portfólio do Pedro</title>
+</head>
+<body>
+
+    <!--Cabeçalho da página-->
+    <header>
+
+        <div id="header_content">
+           <!-- Título do cabeçalho -->
+            <div id="titulo">
+                <a href="#">Universo</a>
+            </div>
+
+            <!--Menu-->
+            <div id="menu">
+
+                <!--Barra de Navegação-->
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!--Seção princiál da página-->
+    <main>
+
+        <!--Seção Home-->
+        <section id="home">
+            <article id="home_texto">
+
+                <h4>Bem-Vindo ao Novo Universo</h4>
+                <h1>Mundos diferentes para pessoas diferentes</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam quo earum fugiat necessitatibus ab reiciendis repudiandae similique odit eos consectetur iure delectus ipsum incidunt ipsam at optio, voluptate quod?</p>
+                <a href="https://github.com/phccoelho" target="_blank">Explorar</a>
+            </article>
+
+            <article id="home_imagem">
+
+                <img src="./assets/img/astronauta.svg" alt="Capacete do Astronauta com Animação"/>
+
+
+            </article>
+        </section>
+
+        <!--Seção Sobre-->
+        <section id="about">
+            
+            <img src="./assets/img/user_01.svg" alt="Foto do Perfil do Github"/>
+
+            <article id="about_texto">
+                <h1>Sobre mim</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam quo earum fugiat necessitatibus ab reiciendis repudiandae similique odit eos consectetur iure delectus ipsum incidunt ipsam at optio, voluptate quod?</p>
+
+                <div id="about_github">
+                    <a href="https://github.com/phccoelho" target="_blank">Github</a>
+                    <p>200 seguidores</p>
+                    <p>20 repositórios</p>
+                </div>
+            </article>
+        </section>
+
+        <!--Seção Contatos-->
+        <section id="contact">
+            <h4>Contate-me</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam quo earum fugiat necessitatibus ab reiciendis repudiandae similique odit eos consectetur iure delectus ipsum incidunt ipsam at optio, voluptate quod?</p>
+            
+            <div id="icones_redes_sociais">
+                
+                <a href="" target="_blank">
+                    <img src="./assets/img/linkedin.svg" alt="Ícone do Linkedin"/>
+                </a>
+
+                <a href="" target="_blank">
+                    <img src="./assets/img/github.svg" alt="Ícone do Github"/>
+                </a>
+
+                <a href="" target="_blank">
+                    <img src="./assets/img/instagram.svg" alt="Ícone do Instagram"/>
+                </a>
+            </div>
+                
+            <form action="" method="POST">
+                <label for="nome">Nome</label>
+                <input
+                    id="nome"
+                    name="nome"
+                    type="text"
+                    placeholder="Digite o seu nome"
+                >
+                <span id="txtNome"></span>
+
+                <label for="email">Email</label>
+                <input
+                    id="email"
+                    name="email"
+                    type="text"
+                    placeholder="Digite um endereço de e-mail válido"
+                >
+                <span id="txtEmail"></span>
+
+                <label for="assunto">Assunto</label>
+                <input
+                    id="assunto"
+                    name="assunto"
+                    type="text"
+                    placeholder="Digite o assunto"
+                >
+                <span id="txtAssunto"></span>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Digite a sua mensagem">
+
+                </textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>        
+        Feito com ❤ por Pedro Coelho - 2025
+    </footer>
+</body>
+</html>
