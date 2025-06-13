@@ -1,166 +1,142 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
+<html lang="pt-br">
+
+<head>
 
     <!-- Servidores de Fontes do Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Fonte do Google - Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Projeto Portfólio do Pedro, desenvolvedor web fullstack."/>
-    <meta name="author" content="Pedro Coelho" />
-    <meta name="keywords" content="Portfólio, desenvolvedor, web, fullstack, Pedro Coelho, HTML, CSS, JavaScript"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto Portfólio do Pedro desenvolvedor web fullstack.">
+    <meta name="author" content="Pedro Coelho">
+    <meta name="keywords" content="portfólio, desenvolvedor, web, fullstack, Pedro Coelho, HTML, CSS, JavaScript">
     <link rel="icon" href="./assets/img/favicon.svg" />
 
-    <!-- Link pra acessar o CSS -->
+    <!-- Link para o arquivo CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
-    <title>Portfólio do Pedro</title>
-  </head>
-  <body>
+    <title>Portfólio do Rafael</title>
+</head>
+
+<body>
+
     <!-- Cabeçalho da página -->
     <header class="flex menu_container">
 
-      <div id="header_content" class="menu_content">
-        <!-- Título do cabeçalho -->
-        <div id="titulo">
-          <a href="#">Universo</a>
-        </div>
+        <div id="header_content" class="menu_content">
+            <!-- Título do cabeçalho -->
+            <div id="titulo">
+                <a href="#">Universo</a>
+            </div>
 
-        <!-- menu -->
-        <div id="menu" class="flex">
+            <!-- Menu -->
+            <div id="menu" class="flex">
 
-          <!-- barra de navegação -->
-          <nav>
-            <ul class="flex menu_list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#about">Sobre</a></li>
-              <li><a href="#contact">Contatos</a></li>
-            </ul>
-          </nav>
+                <!-- Barra de Navegação -->
+                <nav>
+                    <ul class="flex menu_list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contatos</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-      </div>
     </header>
 
-    <!-- seção principal da página -->
+    <!-- Seção principal da página -->
     <main>
-      <!-- seção home -->
-      <section id="home" class="flex home_container">
 
-        <article id="home_texto" class="flex home_content">
-          <h4>Bem-vindo ao Novo Universo</h4>
-          <h1>Mundos diferentes para pessoas diferentes</h1>
-          <p>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursusquis, vehicula ac nisi. Mé faiz elementum girarzis, nisi erosvermeio. Leite de capivaris, leite de mula manquis sem cabeça. Bota1 metro de cachacis aí pra viagem!</p>
-          <a href="https://github.com/phccoelho" target="_blank" class="botao" >Explorar</a
-          >
-        </article>
+        <!-- Seção Home -->
+        <section id="home" class="flex home_container">
 
-        <article id="home_imagem" class="flex home_content">
-          <img src="./assets/img/astronauta.svg"alt="Capacete do astronauta com animação"/>
-        </article>
-      </section>
+            <!-- Texto da seção Home -->
+            <article id="home_texto" class="flex home_content">
+                <h4>Bem-vindo ao Novo Universo</h4>
+                <h1>Mundos diferentes para pessoas diferentes</h1>
+                <p>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Quem manda
+                    na minha terra sou euzis! A ordem dos tratores não altera o pão duris. Copo furadis é disculpa de
+                    bebadis, arcu quam euismod magna.</p>
+                <a href="https://github.com/phccoelho" target="_blank" class="botao">Explorar</a>
+            </article>
 
-      <!-- seção sobre -->
-      <section id="about" class="flex">
-        <!--Conteúdo da seção-->
-        <div id="conteudo" class="flex">
-          <img src="./assets/img/user_01.svg" alt="Foto do perfil do GitHub" class="img_profile"/>
-          <article id="about_texto">
-            <h2>Sobre mim</h2>
-            <p>
-              Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursusquis, vehicula ac nisi. Mé faiz elementum girarzis, nisi erosvermeio. Leite de capivaris, leite de mula manquis sem cabeça. Bota1 metro de cachacis aí pra viagem!
-            </p>
+            <!-- Imagem da seção  Home -->
+            <article id="home_imagem" class="flex home_content">
+                <img src="./assets/img/astronauta.svg" alt="Capacete do astronauta com animação" />
+            </article>
+        </section>
 
-            <div id="about_github" class="sobre_container">
-              <a
-                href="https://github.com/phccoelho" target="_blank"class="botao"
-                >Github</a
-              >
-              <p>200 seguidores</p>
-              <p>20 repositórios</p>
-            </div>
-          </article>
-        </div>
-      </section>
-      
-      <!-- seção contatos -->
-      <section id="contact" class="contato_container">
-        <article id="redes_sociais" class="contato_content">
-          <h4>Contate-me</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda nam
-            quo earum fugiat necessitatibus ab reiciendis repudiandae similique
-            odit eos consectetur iure delectus ipsum incidunt ipsam at optio,
-            voluptate quod?
-          </p>
+        <!-- Seção Sobre -->
+        <section id="about" class="flex sobre_container">
 
-          <div id="icones_redes_sociais" class="social_container">
-            <a
-              href="https://www.linkedin.com/in/pedro-coelho-646552273/" target="_blank" class="social_icon"  aria-label="LinkedIn"
-            >
-              <img src="./assets/img/linkedin.svg" alt="Ícone do Linkedin" />
-            </a>
-            <a
-              href="https://github.com/phccoelho"target="_blank" class="social_icon" aria-label="GitHub"
-            >
-              <img src="./assets/img/github.svg" alt="Ícone do Github" />
-            </a>
-            <a
-              href=""
-              target="_blank"
-              aria-label="Instagram"
-              class="social_icon"
-            >
-              <img src="./assets/img/instagram.svg" alt="Ícone do Instagram" />
-            </a>
-          </div>
-        </article>
-          <form action="#" method="POST">
-            <label for="nome">Nome</label>
-            <input
-              id="nome"
-              name="nome"
-              type="text"
-              placeholder="Digite o seu nome"
-            />
-            <span id="txtNome"></span>
+        </section>
 
-            <label for="email">Email</label>
-            <input
-              id="email"
-              name="email"
-              type="text"
-              placeholder="Digite um endereço de e-mail válido"
-            />
-            <span id="txtEmail"></span>
+        <!-- Seção de Contatos -->
+        <section id="contact" class="contato_container">
 
-            <label for="assunto">Assunto</label>
-            <input
-              id="assunto"
-              name="assunto"
-              type="text"
-              placeholder="Digite o assunto"
-            />
-            <span id="txtAssunto"></span>
+            <article id="redes_sociais" class="contato_content">
+                <h4>Contate-me</h4>
+                <p>Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Quem manda
+                    na minha terra sou euzis! A ordem dos tratores não altera o pão duris. Copo furadis é disculpa de
+                    bebadis, arcu quam euismod magna.</p>
 
-            <label for="mensagem">Mensagem</label>
-            <textarea
-              name="mensagem"
-              id="mensagem"
-              placeholder="Digite a sua mensagem"
-            ></textarea>
+                <!-- Redes Sociais -->
+                <div id="icones_redes_sociais" class="social_container">
+                    <a href="" target="_blank" class="social_icon">
+                        <img src="./assets/img/linkedin.svg" alt="Ícone do LinkedIn" />
+                    </a>
 
-            <button class="botao" type="submit">Enviar</button>
-          </form>
-         
-      </section>
+                    <a href="" target="_blank" class="social_icon">
+                        <img src="./assets/img/github.svg" alt="Ícone do GitHub" />
+                    </a>
+
+                    <a href="" target="_blank" class="social_icon">
+                        <img src="./assets/img/instagram.svg" alt="Ícone do Instagram" />
+                    </a>
+                </div>
+            </article>
+
+            <!-- Formulário de Contato -->
+            <form action="https://formsubmit.co/5ef2024501797673d28212fb2fbf084b" method="POST" id="formulario">
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucess.html">
+                <input type="hidden" name="_captcha" value="false">
+
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Digite o seu nome">
+                <span id="txtNome"></span>
+
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="text" placeholder="Digite um endereço de e-mail válido">
+                <span id="txtEmail"></span>
+
+                <label for="assunto">Assunto</label>
+                <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto">
+                <span id="txtAssunto"></span>
+
+                <label for="mensagem">Mensagem</label>
+
+                <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem">
+                </textarea>
+
+                <button class="botao" type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
     <!-- Rodapé da página -->
-    <footer>Desenvolvido por Pedro Coelho - 2025 🤖</footer>
-  </body>
+    <footer>
+        Feito com ❤ por Pedro Coelho - 2025
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="./assets/js/script.js"></script> 
+
+</body>
+
 </html>
