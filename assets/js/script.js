@@ -83,3 +83,31 @@ formulario.addEventListener("submit", function(event){
 })
 
 getApiGithub()
+
+
+let canvas; // para armazenar o canvas do p5
+
+function setup() {
+  canvas = createCanvas(window.innerWidth, document.querySelector('.home_container').offsetHeight);
+  canvas.parent('water-bg');
+  noFill();
+  stroke(0, 119, 255, 50);
+}
+
+function draw() {
+  clear();
+  translate(width / 2, height / 2);
+  let t = frameCount * 0.5;
+
+  for (let i = 0; i < 10; i++) {
+    let r = t - i * 30;
+    if (r > 0) {
+      strokeWeight(2);
+      ellipse(0, 0, r * 2);
+    }
+  }
+}
+
+function windowResized() {
+  resizeCanvas(window.innerWidth, document.querySelector('.home_container').offsetHeight);
+}

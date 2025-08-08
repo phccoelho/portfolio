@@ -83,7 +83,7 @@ button, a {
     height: 5rem;
     background-color:rgb(11, 6, 24);
     border-bottom: 1px solid var(--blue-300);
-    filter: opacity(0.5);
+    filter: opacity(0.7);
     z-index: 1000;
 }
 
@@ -141,11 +141,11 @@ button, a {
 
 .home_container {
   position: relative;
-  height: calc(100vh - 5rem);
+  height: calc(100vh );
   margin: 0 auto;
   padding: 0 1rem;
   z-index: 1;
-  background-image: url('/assets/img/Fundo_Tecnológico_Azul.png');
+  
   background-size: cover;
   background-position: center;
   overflow: hidden; /* evita que o gradiente vaze */
@@ -172,6 +172,22 @@ button, a {
   );
   background-size: 400% 400%;
   animation: animarBorda 6s linear infinite;
+}
+
+
+@keyframes animarBorda {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+#water-bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
 }
 
 
@@ -271,6 +287,80 @@ h4{
 
 }
 
+/* Tecnologias */
+
+.tech_container {
+  height: 100vh;  
+  padding: 4rem 2rem;
+  text-align: center;
+  
+}
+
+.tech_container h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+/* Personalização Minhas Skills e Tecnologia  */
+.destaque-1 {
+  color: var(--white); 
+  text-shadow: 0 0 5px #00b7ff;
+}
+
+.destaque-2 {
+  color: #01ccff; /* azul neon/verde água */
+  text-shadow: 0 0 5px #2600ff; 
+}
+
+.destaque-3{
+  text-shadow: 0 0 10px #2600ff; 
+}
+
+.tech_container h2 {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  color: #01ccff;
+  
+}
+
+.tech_grid {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+  row-gap: 5rem;
+  justify-items: center;
+}
+
+.tech_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  padding: 1rem;
+  border: 2px solid var(--blue-300); /* borda azul */
+  border-radius: 12px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  animation: brilhoAzul 4s linear infinite;
+}
+
+.tech_item img {
+  width: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.tech_item p {
+  margin-top: 0.25rem;
+  color: var(--whiteblue);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.tech_item:hover {
+  transform: scale(1.1);
+}
+
 /* Contato */
 
 .contato_container{
@@ -311,14 +401,12 @@ h4{
 }
 
 .social_icon:hover{
-    filter:brightness(0) 
-            saturate(100%) 
-            invert(70%) 
-            sepia(22%) 
-            saturate(680%) 
-            hue-rotate(72deg) 
-            brightness(98%) 
-            contrast(85%);
+    filter:  invert(60%) 
+             sepia(96%) 
+             saturate(2700%) 
+             hue-rotate(180deg) 
+             brightness(102%) 
+             contrast(102%);
 }
 
 /* Formulário */
@@ -364,8 +452,8 @@ footer {
     font-weight: bold;
     text-align: center;
     color: var(--white);
-    background-color: var(--green);
-    filter: opacity(0.9);
+    background-color: #010653;
+    filter: opacity(0.5);
 }
 
 

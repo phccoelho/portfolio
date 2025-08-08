@@ -31,7 +31,7 @@
         <div id="header_content" class="menu_content">
             <!-- Título do cabeçalho -->
             <div id="titulo">
-                <a href="#">Universo</a>
+                <a href="#">Portfólio Pedro</a>
             </div>
 
             <!-- Menu -->
@@ -54,26 +54,85 @@
 
         <!-- Seção Home -->
         <section id="home" class="flex home_container">
-            
-                <!-- Texto da seção Home -->
-                <article id="home_texto" class="flex home_content">
-                    <h4>Bem-vindo(a) ao Meu Portfólio</h4>
-                    <h1>Pedro Coelho</h1>
-                    <p> Desenvolvedor Full-stack | Java | JavaScript </p>
-                    <a href="https://github.com/phccoelho" target="_blank" class="botao">Explorar</a>
-                </article>
+            <div id="water-bg"></div> <!-- Efeito de fundo com p5.js -->
 
-                <!-- Imagem da seção  Home -->
-                <article id="home_imagem" class="flex home_content">
-                    <img src="./assets/img/Computador_Tecnologico.png" alt="Capacete do astronauta com animação" />
-                </article>
-            
+            <!-- Conteúdo -->
+            <article id="home_texto" class="flex home_content">
+                <h4>Bem-vindo(a) ao Meu Portfólio</h4>
+                <h1>Pedro Coelho</h1>
+                <p> Desenvolvedor Full-stack | Java | JavaScript </p>
+                <a href="https://github.com/phccoelho" target="_blank" class="botao">Explorar</a>
+            </article>
+
+            <article id="home_imagem" class="flex home_content">
+                <img src="./assets/img/Computador_Tecnologico.png" alt="Capacete do astronauta com animação" />
+            </article>
         </section>
 
         <!-- Seção Sobre -->
         <section id="about" class="flex sobre_container">
             
         </section>
+
+        <!-- Seção Tecnologias -->
+        <section id="technologies" class="tech_container">
+            <h1>
+                <span class="destaque-1">Minhas</span> <span class="destaque-2">Skills</span>
+            </h1>
+            <h2 class ="destaque-3">Tecnologias</h2>
+            <div class="tech_grid">
+                <div class="tech_item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                <p>HTML5</p>
+                </div>
+                <div class="tech_item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                <p>CSS3</p>
+                </div>
+                <div class="tech_item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                <p>JavaScript</p>
+                </div>
+                <div class="tech_item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                <p>Java</p>
+                </div>
+                <div class="tech_item">
+                <img src="./assets/img/github.svg" alt="GitHub">
+                <p>GitHub</p>
+                </div>
+                <div class="tech_item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
+                <p>React</p>
+                </div>
+                <div class="tech_item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                <p>Git</p>
+                </div>
+                <div class="tech_item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" />
+                <p>Spring</p>
+                </div>
+                <div class="tech_item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                <p>Tailwind</p>
+                </div>
+                <div class="tech_item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/yarn/yarn-original.svg" />
+                <p>Yarn</p>
+                </div>
+                <div class="tech_item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+                <p>MySQL</p>
+                </div>
+                <div class="tech_item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/insomnia/insomnia-original.svg" />
+                <p>Insomnia</p>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Seção Projetos-->
 
         <!-- Seção de Contatos -->
         <section id="contact" class="contato_container">
@@ -87,15 +146,15 @@
                 <!-- Redes Sociais -->
                 <div id="icones_redes_sociais" class="social_container">
                     <a href="" target="_blank" class="social_icon">
-                        <img src="./assets/img/linkedin.svg" alt="Ícone do LinkedIn" />
+                        <img src="./assets/img2/img/linkedin01.svg" alt="Ícone do LinkedIn" />
                     </a>
 
                     <a href="" target="_blank" class="social_icon">
-                        <img src="./assets/img/github.svg" alt="Ícone do GitHub" />
+                        <img src="./assets/img2/img/github01.svg" alt="Ícone do GitHub" />
                     </a>
 
                     <a href="" target="_blank" class="social_icon">
-                        <img src="./assets/img/instagram.svg" alt="Ícone do Instagram" />
+                        <img src="./assets/img2/img/instagram01.svg" alt="Ícone do Instagram" />
                     </a>
                 </div>
             </article>
@@ -130,11 +189,15 @@
 
     <!-- Rodapé da página -->
     <footer>
-        Feito com ❤ por Pedro Coelho - 2025
+        Feito por Pedro Coelho - 2025
     </footer>
 
     <!-- Script JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"></script>
+
     <script src="./assets/js/script.js"></script> 
+
+
 
 </body>
 
